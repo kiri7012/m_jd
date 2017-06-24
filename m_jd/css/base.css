@@ -1,0 +1,54 @@
+
+/*公共样式*/
+html,body,ul,li,img,a,p,div,input,form ,h3{
+    margin: 0;
+    padding: 0;
+    /*设置盒模型*/
+    box-sizing: border-box;
+    /*设置移动端特有的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+
+}
+body {
+    font-family: "microsoft yahei",san-serif;
+}
+a , a:hover{
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    list-style: none;
+}
+/*去除input获得焦点之后的边框颜色 input重置*/
+input {
+    /*
+    1、清除文本框获取焦点时默认的边框阴影
+    2、去除边框
+    3、添加边框
+    */
+    outline:none;
+    border: none;
+    border: 1px solid #ccc;
+}
+/*浮动*/
+.f_left {
+    float: left;
+}
+.f_right {
+    float: right;
+}
+.m_right10 {
+    margin-right: 10px;
+}
+.m_left10 {
+    margin-left: 10px;
+}
+.clearfix::before ,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height:0;
+    visibility: hidden;
+    clear: both;
+}
